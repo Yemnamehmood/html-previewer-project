@@ -1,7 +1,8 @@
 'use client'
-import { useEffect, useState } from "react";
+import { useState } from "react";
 
 export default function Home() {
+  // State to hold the HTML code input by the user
   const [htmlCode, setHtmlCode] = useState(`
 <!DOCTYPE html>
 <html lang="en">
@@ -15,10 +16,11 @@ export default function Home() {
     <p>This is a demo HTML template.</p>
 </body>
 </html>
-`);
+`); // Default demo HTML code
 
+  // Function to handle changes in the textarea
   const handleCodeChange = (e: React.ChangeEvent<HTMLTextAreaElement>) => {
-    setHtmlCode(e.target.value);
+    setHtmlCode(e.target.value); // Update state with user input
   };
 
   return (
@@ -27,13 +29,13 @@ export default function Home() {
       <div className="editor-container">
         <textarea
           className="textarea"
-          value={htmlCode}
-          onChange={handleCodeChange}
+          value={htmlCode} // Bind value to state
+          onChange={handleCodeChange} // Set onChange to update state
           placeholder="Type your HTML code here..."
         />
         <div className="preview">
           <iframe
-            srcDoc={htmlCode}
+            srcDoc={htmlCode} // Use srcDoc to show live preview
             title="HTML Preview"
             style={{ width: "100%", height: "100%", border: "none" }}
           />
