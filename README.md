@@ -1,36 +1,22 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
 
-## Getting Started
+# HTML Previewer
 
-First, run the development server:
+## Description
+The HTML Previewer is a user-friendly web application that allows users to input and preview HTML code in real time. It is designed for developers, students, and anyone looking to experiment with HTML without the need for external tools. Users can type or paste their HTML code into a dedicated input area, and the rendered output will display instantly alongside the code.
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
+## Features
+- **Code Input Area**: A text area where users can enter HTML code.
+- **Live Preview**: An iframe that shows the rendered HTML output, updating in real time as the user types.
+- **Demo HTML Template**: A pre-filled demo HTML template to help users get started quickly.
+- **Responsive Design**: The application is styled to be visually appealing and adjusts seamlessly for mobile devices and different screen sizes.
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+## Technologies Used
+- **Next.js**: A powerful React framework for server-side rendering and static site generation.
+- **TypeScript**: A typed superset of JavaScript that improves code quality and maintainability.
+- **CSS**: Custom styles to create an attractive user interface.
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+## Installation Instructions
+To run the HTML Previewer locally, users can clone the repository, install the necessary dependencies, and start the development server. Detailed instructions can be found in the installation section of the repository.
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
-
-## Learn More
-
-To learn more about Next.js, take a look at the following resources:
-
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
-
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
-
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+## Usage
+Users can simply type their HTML code in the input area, and the live preview will show the output in real-time. The demo template helps users understand the structure of an HTML document and encourages experimentation.
